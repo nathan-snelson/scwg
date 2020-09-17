@@ -46,3 +46,11 @@
 .link:hover {
   color: #ffffff;
 }
+
+.top {
+  background-color: lightgreen;
+}
+
+.default {
+  background-color: white;
+}

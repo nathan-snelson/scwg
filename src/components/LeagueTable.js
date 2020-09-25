@@ -1,5 +1,3 @@
-import React from 'react';
-
 const LeagueTable = (props) => {
     const {headers, rows} = props;    
 

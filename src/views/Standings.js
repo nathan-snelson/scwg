@@ -1,4 +1,3 @@
-import React from 'react';
 import LeagueTable from '../components/LeagueTable';
 
 import db from '../data/db.json';

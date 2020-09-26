@@ -29,6 +29,7 @@ const Standings = () => {
         <Container fluid>
             <Row>
                 <Col className="text-center">
+                    <h2 className="text-uppercase text-center">Warhammer 40k League Table</h2>
                     <LeagueTable headers={Object.keys(schema)} rows={formatted} />
                 </Col>
             </Row>

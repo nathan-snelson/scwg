@@ -10,7 +10,15 @@ import Home from './views/Home';
 import Standings from './views/Standings';
 import Contact from './views/Contact';
 
+import { link } from './styles';
+
 //import Footer from './components/Footer';
+
+const styles = {
+  "color": link.color,
+  "padding-right": link.padr,
+  "padding-left": link.padl
+}
 
 function App() {
   return (
@@ -24,11 +32,11 @@ function App() {
 
             <NavBar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Link className="link" to={'/'}>Home</Link>
-                <Link className="link" to={'/about'}>About</Link>
-                <Link className="link" to={'/standings'}>Standings</Link>
-                <Link className="link" to={'/events'}>Events</Link>
-                <Link className="link" to={'/contact'}>Contact</Link>              
+                <Link className="link" style={styles} to={'/'}>Home</Link>
+                <Link className="link" style={styles} to={'/about'}>About</Link>
+                <Link className="link" style={styles} to={'/standings'}>Standings</Link>
+                <Link className="link" style={styles} to={'/events'}>Events</Link>
+                <Link className="link" style={styles} to={'/contact'}>Contact</Link>              
               </Nav>
             </NavBar.Collapse>
           </NavBar>

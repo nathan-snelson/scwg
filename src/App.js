@@ -12,7 +12,7 @@ import { Contact } from './views/Contact';
 
 import { link } from './styles';
 
-//import Footer from './components/Footer';
+import { Footer } from './components/Footer';
 
 const styles = {
   "color": link.color,
@@ -48,6 +48,8 @@ export function App() {
           </Switch>
         </div>
       </Router>
+
+      <Footer />
     </div>    
   );
 }

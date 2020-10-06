@@ -1,4 +1,4 @@
-const LeagueTable = (props) => {
+export const LeagueTable = (props) => {
     const {headers, rows} = props;    
 
     return (
@@ -49,5 +49,3 @@ const TableBody = (props) => {
         </tbody>
     )
 }
-
-export default LeagueTable;

@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import scwglogo from './scwglogo.svg';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import NavBar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-import Home from './views/Home';
-import Standings from './views/Standings';
-import Contact from './views/Contact';
+import { Home } from './views/Home';
+import { Standings } from './views/Standings';
+import { Contact } from './views/Contact';
 
 import { link } from './styles';
 
@@ -20,7 +20,7 @@ const styles = {
   "padding-left": link.padl
 }
 
-function App() {
+export function App() {
   return (
     <div>
       <Router>
@@ -51,5 +51,3 @@ function App() {
     </div>    
   );
 }
-
-export default App;

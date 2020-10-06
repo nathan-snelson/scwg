@@ -1,4 +1,4 @@
-import LeagueTable from '../components/LeagueTable';
+import { LeagueTable } from '../components/LeagueTable';
 
 import db from '../data/db.json';
 import schema from '../data/schema.json';
@@ -24,7 +24,7 @@ let addIndex = (data) => {
 
 let formatted = addIndex(sortedDb);
 
-const Standings = () => {
+export const Standings = () => {
     return (
         <Container fluid>
             <Row>
@@ -36,5 +36,3 @@ const Standings = () => {
         </Container>        
     )
 }
-
-export default Standings;

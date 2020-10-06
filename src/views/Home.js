@@ -1,4 +1,4 @@
-import LeagueTable from '../components/LeagueTable';
+import { LeagueTable } from '../components/LeagueTable';
 
 import db from '../data/db.json';
 import schema from '../data/schema.json';
@@ -16,7 +16,7 @@ let sortedDb = db.sort((a,b) => {
 });
 let placements = sortedDb.slice(0,5);
 
-const Home = () => {
+export const Home = () => {
     return (
         <Container fluid>
             <Row>
@@ -35,5 +35,3 @@ const Home = () => {
         </Container>        
     )
 }
-
-export default Home;

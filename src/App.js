@@ -15,14 +15,13 @@ import { link } from './styles';
 import { Footer } from './components/Footer';
 
 const styles = {
-  "color": link.color,
-  "padding-right": link.padr,
-  "padding-left": link.padl
+  color: link.color,
+  paddingRight: link.padr,
+  paddingLeft: link.padl
 }
 
 export function App() {
   return (
-    <div>
       <Router>
         <div>
           <NavBar bg="dark" variant="dark">
@@ -47,9 +46,8 @@ export function App() {
             <Route path='/contact' component={Contact} />
           </Switch>
         </div>
-      </Router>
 
-      <Footer />
-    </div>    
+        <Footer />
+      </Router>      
   );
 }

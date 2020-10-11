@@ -1,8 +1,7 @@
 [{
     "name": "Nathan",
     "role": "Website Administrator",
-    "content": ["email: nathansnelson97@gmail.com",
-                "mobile: 07554008517"]    
+    "content": ["email: nathansnelson97@gmail.com"]    
 },
 {
     "name": "Mark",
@@ -10,7 +9,7 @@
     "content": ["email: markwild@gmail.com"]
 },
 {
-    "name": "Adam",
+    "name": "George",
     "role": "Club Founder",
-    "content": ["email: adam@gmail.com"]
+    "content": ["email: george@gmail.com"]
 }]

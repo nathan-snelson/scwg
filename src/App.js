@@ -2,7 +2,6 @@ import './index.css';
 import scwglogo from './scwglogo.svg';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
 import NavBar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -12,6 +11,7 @@ import { Contact } from './views/Contact';
 
 import { link } from './styles';
 
+import { AlertDismissable } from './components/AlertDismissable';
 import { Footer } from './components/Footer';
 
 const styles = {
@@ -40,6 +40,7 @@ export function App() {
             </NavBar.Collapse>
           </NavBar>
           <hr />
+          <AlertDismissable />
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/standings' component={Standings} />

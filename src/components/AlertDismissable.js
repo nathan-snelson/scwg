@@ -19,7 +19,7 @@ export const AlertDismissable = () => {
                 </div>                
             </Alert>
             
-            {!show && <div className="d-flex justify-content-center"><Button onClick={() => setShow(true)} variant="outline-primary">Show Alert</Button></div>}
+            {/*!show && <div className="d-flex justify-content-center"><Button onClick={() => setShow(true)} variant="outline-primary">Show Alert</Button></div>*/}
         </>
     );
 }

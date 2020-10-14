@@ -39,7 +39,7 @@ export const Footer = () => {
                             <FontAwesomeIcon icon={faInstagram}/><a href="https://www.instagram.com/steelcity_wargaming_/?hl=en"> steelcity_wargaming_ </a>
                         </li>
                         <li className="list-unstyled">
-                            <FontAwesomeIcon icon={faGithub}/><a href="https://github.com/nathan-snelson/scwg">  nathan-snelson </a>
+                            <FontAwesomeIcon icon={faGithub}/><a href="https://github.com/nathan-snelson/scwg"> nathan-snelson </a>
                         </li>
                         </ul>
                     </Col>

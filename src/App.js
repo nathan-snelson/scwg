@@ -8,6 +8,8 @@ import Nav from 'react-bootstrap/Nav';
 import { Home } from './views/Home';
 import { Standings } from './views/Standings';
 import { Contact } from './views/Contact';
+import { About } from './views/About';
+import { Event } from './views/Events';
 
 import { link } from './styles';
 
@@ -43,7 +45,9 @@ export function App() {
           <AlertDismissable />
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
             <Route path='/standings' component={Standings} />
+            <Route path='/events' component={Event} />            
             <Route path='/contact' component={Contact} />
           </Switch>
         </div>

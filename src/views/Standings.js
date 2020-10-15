@@ -1,9 +1,8 @@
+import { Row, Col, Container } from 'react-bootstrap';
 import { LeagueTable } from '../components/LeagueTable';
 
 import db from '../data/db.json';
 import schema from '../data/schema.json';
-
-import { Row, Col, Container } from 'react-bootstrap';
 
 let sortedDb = db.sort((a,b) => {
     if(a.points > b.points) {

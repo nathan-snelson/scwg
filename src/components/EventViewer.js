@@ -5,19 +5,19 @@ export const EventViewer = (props) => {
 
     return (
         <Accordion defaultActiveKey="0">
-            {events.map((event) => {
+            {events.map((event,index) => {
                 return (
                     <Card key={event.title}>
-                        <Card.Header>
-                            <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                        <Card.Header>                            
+                            <Accordion.Toggle as={Button} variant="link" eventKey={index.toString()}>
                             {event.title} - {event.date} - {event.type}
                             </Accordion.Toggle>                   
                         </Card.Header>
-                        <Accordion.Collapse eventKey="0">
+                        <Accordion.Collapse eventKey={index.toString()}>
                             <Card.Body>
                                 {event.details}
-                                <br/>
-                                <Button variant="primary" href={event.link} target="_blank">More Details</Button>
+                                <hr/>
+                                <Button variant="outline-primary" href={event.link} target="_blank">More Details</Button>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>

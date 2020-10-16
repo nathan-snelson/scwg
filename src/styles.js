@@ -5,10 +5,16 @@ export const link = {
 };
 
 export const footer = {
-    position: 'absolute',
+    position: 'fixed',
     left: '0',
     bottom: '0',
     right: '0',
     background: '#353a40',
-    color: '#C0C0C0'
+    color: '#C0C0C0',
+    height: '180px'
 };
+
+export const text = {
+    fontSize: '18pt',
+    color: '#C0C0C0'
+}

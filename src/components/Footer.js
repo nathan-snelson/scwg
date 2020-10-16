@@ -11,7 +11,8 @@ const styles = {
     bottom: footer.bottom,
     right: footer.right,
     backgroundColor: footer.background,
-    color: footer.color
+    color: footer.color,
+    height: footer.height
 }
 
 export const Footer = () => {

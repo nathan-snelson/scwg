@@ -1,31 +1,5 @@
-import { Card, CardColumns } from 'react-bootstrap';
-import { Carousel } from 'react-bootstrap';
-
-import w40k_logo from '../images/40k_logo.png';
-import aos_logo from '../images/aos_logo.png';
-import bolt_action from '../images/bolt_action_logo.png';
-import middle_earth from '../images/middle_earth_logo.png';
-import dnd_logo from '../images/dnd_logo.png';
-import black_powder from '../images/black_powder_logo.png';
-
-const images = [{src: w40k_logo,
-                heading: "Warhammer 40k",
-                content: "A large Warhammer 40k community."},
-                {src: aos_logo,
-                heading: "Warhammer AOS",
-                content: "A growing Warhammer AOS community."},
-                {src: middle_earth,
-                heading: "Middle Earth Strategy Battle Game",
-                content: "A large Middle Earth SBG community."},
-                {src: bolt_action,
-                heading: "Bolt Action",
-                content: "A growing Bolt Action community."},
-                {src: dnd_logo,
-                heading: "Dungeons & Dragons",
-                content: "A vibrant Dungeons and Dragons community."},
-                {src: black_powder,
-                heading: "Black Powder",
-                content: "A growing Black Powder community."}]
+import { Card, CardColumns, Carousel } from 'react-bootstrap';
+import { images } from '../images/catalogue.js';
 
 export const GameViewer = () => {
     return (        
@@ -46,7 +20,7 @@ export const GameViewer = () => {
 
 export const CarouselView = () => {
     return (
-        <Carousel controls={false} indicators={false} keyboard={false}>
+        <Carousel controls={false} indicators={false} keyboard={false} pause={false} fade={true} interval={4000}>
             {images.map((image, index) => {
                 return (
                     <Carousel.Item key={index}>

@@ -6,10 +6,11 @@ import NavBar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 import { Home } from './views/Home';
-import { Standings } from './views/Standings';
-import { Contact } from './views/Contact';
 import { About } from './views/About';
+import { Covid } from './views/Covid';
+import { Standings } from './views/Standings';
 import { Event } from './views/Events';
+import { Contact } from './views/Contact';
 
 import { link } from './styles';
 
@@ -26,7 +27,7 @@ export function App() {
   return (
       <Router>
         <div>
-          <NavBar bg="dark" variant="dark">
+          <NavBar bg="dark" variant="dark" styles={{width: '100%'}}>
             <NavBar.Brand>
               <img src={scwglogo} alt="SCWG Logo" height="40" width="40" className="d-inline-block align-top"/>
             </NavBar.Brand>
@@ -35,6 +36,7 @@ export function App() {
               <Nav className="mr-auto">
                 <Link className="link" style={styles} to={'/'}>Home</Link>
                 <Link className="link" style={styles} to={'/about'}>About</Link>
+                <Link className="link" style={styles} to={'/covid'}>Covid-19</Link>
                 <Link className="link" style={styles} to={'/standings'}>Standings</Link>
                 <Link className="link" style={styles} to={'/events'}>Events</Link>
                 <Link className="link" style={styles} to={'/contact'}>Contact</Link>              
@@ -46,13 +48,14 @@ export function App() {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
+            <Route path='/covid' component={Covid} />
             <Route path='/standings' component={Standings} />
             <Route path='/events' component={Event} />            
             <Route path='/contact' component={Contact} />
           </Switch>
         </div>
 
-        <Footer />
+        <Footer/>        
       </Router>      
   );
 }

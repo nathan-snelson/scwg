@@ -3,7 +3,7 @@ import { Alert, Button } from 'react-bootstrap';
 
 export const AlertDismissable = () => {
     const [show, setShow] = useState(true);
-
+    
     return (
         <>
             <Alert show={show} variant="warning">

@@ -24,7 +24,7 @@ export const CarouselView = () => {
             {images.map((image, index) => {
                 return (
                     <Carousel.Item key={index}>
-                        <img src={image.src} alt="tits" style={{height: '120px', width: 'auto'}}/>                        
+                        <img src={image.src} style={{height: '120px', width: 'auto'}}/>                        
                     </Carousel.Item>
                 )
             })}

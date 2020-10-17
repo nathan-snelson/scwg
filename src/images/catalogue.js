@@ -12,46 +12,55 @@ export const images = [
     {
         src: w40k_logo,
         heading: "Warhammer 40k",
+        alt: "Warhammer 40k Logo",
         content: "A large Warhammer 40k community."
     },
     {
         src: aos_logo,
         heading: "Warhammer Age of Sigmar",
+        alt: "Warhammer AOS Logo",
         content: "A growing Warhammer AOS community."
     },
     {
         src: underworlds_logo,
         heading: "Warhammer Underworlds",
+        alt: "Warhammer Underworlds Logo",
         content: "A growing Warhammer Underworlds community."
     },
     {
         src: middle_earth,
         heading: "Middle Earth Strategy Battle Game",
+        alt: "Middle Earth Strategy Battle Game Logo",
         content: "A large Middle Earth SBG community."
     },
     {
         src: bolt_action,
         heading: "Bolt Action",
+        alt: "Bolt Action Logo",
         content: "A growing Bolt Action community."
     },
     {
         src: dnd_logo,
         heading: "Dungeons & Dragons",
+        alt: "Dungeons & Dragons Logo",
         content: "A vibrant Dungeons and Dragons community."
     },
     {
         src: black_powder,
         heading: "Black Powder",
+        alt: "Black Powder Logo",
         content: "A growing Black Powder community."
     },
     {
         src: legion_logo,
         heading: "Star Wars Legion",
+        alt: "Star Wars Legion Logo",
         content: "A large Legion community."
     },
     {
         src: xwing_logo,
         heading: "Star Wars X-Wing",
+        alt: "Star Wars X-Wing Logo",
         content: "A large X-Wing community."
     }
 ]

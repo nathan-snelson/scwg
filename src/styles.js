@@ -15,6 +15,6 @@ export const footer = {
 };
 
 export const text = {
-    fontSize: '18pt',
+    fontSize: '16pt',
     color: '#C0C0C0'
 }

@@ -16,3 +16,5 @@ export const About = () => {
         </Container>
     )
 }
+
+export default About

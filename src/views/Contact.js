@@ -1,9 +1,9 @@
 import { Row, Col, Container } from 'react-bootstrap';
 
-import { Details } from '../components/Details';
+import Details from '../components/Details';
 import contacts from '../data/contact.json';
 
-export const Contact = () => {
+const Contact = () => {
     return (
         <Container fluid>
             <Row>
@@ -34,3 +34,5 @@ export const Contact = () => {
         </Container>
     )
 }
+
+export default Contact;

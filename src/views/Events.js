@@ -1,9 +1,9 @@
 import { Row, Col, Container } from 'react-bootstrap';
 
-import { EventViewer } from '../components/EventViewer';
+import EventViewer from '../components/EventViewer';
 import events from '../data/events.json';
 
-export const Event = () => {
+const Event = () => {
     return (
         <Container fluid>
             <Row>
@@ -14,3 +14,5 @@ export const Event = () => {
         </Container>
     )
 }
+
+export default Event;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Alert, Button } from 'react-bootstrap';
 
-export const AlertDismissable = () => {
+const AlertDismissable = () => {
     const [show, setShow] = useState(true);
     
     return (
@@ -23,3 +23,5 @@ export const AlertDismissable = () => {
         </>
     );
 }
+
+export default AlertDismissable;

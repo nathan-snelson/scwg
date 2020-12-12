@@ -5,17 +5,17 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import NavBar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-import { Home } from './views/Home';
-import { About } from './views/About';
-import { Covid } from './views/Covid';
-import { Standings } from './views/Standings';
-import { Event } from './views/Events';
-import { Contact } from './views/Contact';
+import Home from './views/Home';
+import About from './views/About';
+import Covid from './views/Covid';
+import Standings from './views/Standings';
+import Event from './views/Events';
+import Contact from './views/Contact';
 
 import { link } from './styles';
 
-import { AlertDismissable } from './components/AlertDismissable';
-import { Footer } from './components/Footer';
+import AlertDismissable from './components/AlertDismissable';
+import Footer from './components/Footer';
 
 const styles = {
   color: link.color,

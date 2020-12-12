@@ -1,5 +1,5 @@
 import { Row, Col, Container } from 'react-bootstrap';
-import { LeagueTable } from '../components/LeagueTable';
+import LeagueTable from '../components/LeagueTable';
 
 import db from '../data/db.json';
 import schema from '../data/schema.json';
@@ -23,7 +23,7 @@ let addIndex = (data) => {
 
 let formatted = addIndex(sortedDb);
 
-export const Standings = () => {
+const Standings = () => {
     return (
         <Container fluid>
             <Row>
@@ -35,3 +35,5 @@ export const Standings = () => {
         </Container>        
     )
 }
+
+export default Standings;

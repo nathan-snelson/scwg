@@ -1,6 +1,6 @@
 import { Card, CardDeck } from 'react-bootstrap'
 
-export const Details = (props) => {
+const Details = (props) => {
     const {entries} = props;
 
     return (
@@ -33,3 +33,5 @@ const DetailCards = (props) => {
         </Card>
     );
 }
+
+export default Details;

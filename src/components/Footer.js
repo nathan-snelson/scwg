@@ -15,7 +15,7 @@ const styles = {
     height: footer.height
 }
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer color="unique-color-dark" className="font-small pt-4 mt-4" style={styles}>
             <Container fluid className="text-center text-md-left">
@@ -49,3 +49,5 @@ export const Footer = () => {
         </footer>
     );
 }
+
+export default Footer;

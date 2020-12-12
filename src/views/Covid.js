@@ -1,8 +1,8 @@
 import { Row, Col, Container } from 'react-bootstrap';
 
-import { Guideline } from '../components/Guidelines';
+import Guideline from '../components/Guidelines';
 
-export const Covid = () => {
+const Covid = () => {
     return (
         <Container fluid>
             <Row>
@@ -13,3 +13,5 @@ export const Covid = () => {
         </Container>
     )
 }
+
+export default Covid;

@@ -13,7 +13,7 @@ let guidelines = [
     'ONLY ONE MEMBER PER TABLE TO PUT OUT/AWAY GAMING BOARDS/SCENERY'
 ]
 
-export const Guideline = () => {
+const Guideline = () => {
     return (
         <>
             <h2 className="text-uppercase text-center">COVID-19 Guidelines</h2>
@@ -26,3 +26,5 @@ export const Guideline = () => {
         </>
     )
 }
+
+export default Guideline;

@@ -1,6 +1,6 @@
 import { Accordion, Button, Card } from 'react-bootstrap';
 
-export const EventViewer = (props) => {
+const EventViewer = (props) => {
     const { events } = props;
 
     return (
@@ -26,3 +26,5 @@ export const EventViewer = (props) => {
         </Accordion>
     )
 }
+
+export default EventViewer;

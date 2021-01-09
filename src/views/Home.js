@@ -1,6 +1,8 @@
 import { text } from '../styles';
 import { Row, Col, Container } from 'react-bootstrap';
 
+import AlertDismissable from '../components/AlertDismissable';
+
 const styles = {
     fontSize: text.fontSize
 }
@@ -8,6 +10,7 @@ const styles = {
 const Home = () => {
     return (
         <Container fluid>
+            <AlertDismissable />
             <Row>
                 <Col className="text-center">
                     <h2 className="text-uppercase">Welcome!</h2>

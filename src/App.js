@@ -1,61 +1,33 @@
 import './index.css';
-import scwglogo from './scwglogo.svg';
+import { useEffect, useState } from 'react';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import NavBar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-
-import Home from './views/Home';
-import About from './views/About';
-import Covid from './views/Covid';
-import Standings from './views/Standings';
-import Event from './views/Events';
-import Contact from './views/Contact';
-
-import { link } from './styles';
-
-import AlertDismissable from './components/AlertDismissable';
+import TopBar from './components/TopBar';
 import Footer from './components/Footer';
 
-const styles = {
-  color: link.color,
-  paddingRight: link.padr,
-  paddingLeft: link.padl
-}
-
 export function App() {
-  return (
-      <Router>
-        <div>
-          <NavBar bg="dark" variant="dark" styles={{width: '100%'}}>
-            <NavBar.Brand>
-              <img src={scwglogo} alt="SCWG Logo" height="40" width="40" className="d-inline-block align-top"/>
-            </NavBar.Brand>
+  const [windowHeight, setWindowHeight] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
 
-            <NavBar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Link className="link" style={styles} to={'/'}>Home</Link>
-                <Link className="link" style={styles} to={'/about'}>About</Link>
-                <Link className="link" style={styles} to={'/covid'}>Covid-19</Link>
-                <Link className="link" style={styles} to={'/standings'}>Standings</Link>
-                <Link className="link" style={styles} to={'/events'}>Events</Link>
-                <Link className="link" style={styles} to={'/contact'}>Contact</Link>              
-              </Nav>
-            </NavBar.Collapse>
-          </NavBar>
-          <hr />
-          <AlertDismissable />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/covid' component={Covid} />
-            <Route path='/standings' component={Standings} />
-            <Route path='/events' component={Event} />            
-            <Route path='/contact' component={Contact} />
-          </Switch>
-        </div>
+  const updateDimensions = () => {
+    setWindowWidth(typeof window !== "undefined" ? window.innerWidth : 0);
+    setWindowHeight(typeof window !== "undefined" ? window.innerHeight : 0);
+  }
 
-        <Footer/>        
-      </Router>      
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener("resize",updateDimensions());
+  })
+
+  const styles = {
+    topBarHeight: 40,    
+    footerMenuHeight: 50,    
+  }
+
+  return (      
+    <div>
+      <TopBar />
+      <hr />
+      <Footer styles={styles}/>
+    </div>
   );
 }

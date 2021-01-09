@@ -9,7 +9,7 @@ const AlertDismissable = () => {
             <Alert show={show} variant="warning">
                 <Alert.Heading>Warning!</Alert.Heading>
                 <p>
-                    Due to <a href="https://www.gov.uk/government/collections/coronavirus-covid-19-list-of-guidance">COVID-19</a> club activity has been postponed until further notice.
+                    Due to <a href="https://www.gov.uk/government/collections/coronavirus-covid-19-list-of-guidance" target="_blank" rel="noreferrer">COVID-19</a> club activity has been postponed until further notice.
                 </p>
                 <hr />
                 <div className="d-flex justify-content-end">

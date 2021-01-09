@@ -30,18 +30,18 @@ const Footer = () => {
                     <Col md="6">
                         <h5 className="title">Useful Links</h5>
                         <ul>
-                        <li className="list-unstyled">
-                            <FontAwesomeIcon icon={faFacebook}/><a href="https://www.facebook.com/groups/steelcitywargaming"> SCWG Group  </a>
-                        </li>
-                        <li className="list-unstyled">
-                            <FontAwesomeIcon icon={faTwitter}/><a href="https://twitter.com/SCWFrontLine"> SCWargamer </a>
-                        </li>
-                        <li className="list-unstyled">
-                            <FontAwesomeIcon icon={faInstagram}/><a href="https://www.instagram.com/steelcity_wargaming_/?hl=en"> steelcity_wargaming_ </a>
-                        </li>
-                        <li className="list-unstyled">
-                            <FontAwesomeIcon icon={faGithub}/><a href="https://github.com/nathan-snelson/scwg"> nathan-snelson </a>
-                        </li>
+                            <li className="list-unstyled">
+                                <FontAwesomeIcon icon={faFacebook}/><a href="https://www.facebook.com/groups/steelcitywargaming" target="_blank" rel="noreferrer"> SCWG Group  </a>
+                            </li>
+                            <li className="list-unstyled">
+                                <FontAwesomeIcon icon={faTwitter}/><a href="https://twitter.com/SCWFrontLine" target="_blank" rel="noreferrer"> SCWargamer </a>
+                            </li>
+                            <li className="list-unstyled">
+                                <FontAwesomeIcon icon={faInstagram}/><a href="https://www.instagram.com/steelcity_wargaming_/?hl=en" target="_blank" rel="noreferrer"> steelcity_wargaming_ </a>
+                            </li>
+                            <li className="list-unstyled">
+                                <FontAwesomeIcon icon={faGithub}/><a href="https://github.com/nathan-snelson/scwg" target="_blank" rel="noreferrer"> nathan-snelson </a>
+                            </li>
                         </ul>
                     </Col>
                 </Row>                

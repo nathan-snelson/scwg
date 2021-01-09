@@ -17,7 +17,7 @@ const EventViewer = (props) => {
                             <Card.Body>
                                 {event.details}
                                 <hr/>
-                                <Button variant="outline-primary" href={event.link} target="_blank">More Details</Button>
+                                <Button variant="outline-primary" href={event.link} target="_blank" rel="noreferrer">More Details</Button>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
